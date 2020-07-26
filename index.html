@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="title-region">
+            <h4 class="title-region__content">Phân bổ lợi nhuận</h4>
+        </div>
+        <div class="region-calculate">
+            <form action="" class="" id="region-calculate_frm">
+                <div class="form-group">
+                    <label>Nhập số tiền</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="region-calculate_frm-money" name="money">
+                        <div class="input-group-append">
+                            <span class="input-group-text" id="basic-addon1">$</span>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="form-group">
+                    <label>Lãi Suất</label>
+                    <select class="custom-select" id="region-calculate_frm-interest-rate">
+                        <option value="22">22%</option>
+                        <option value="15">15%</option>
+                        <option value="10">10%</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Chế độ xem</label>
+                    <div class="custom-control custom-radio">
+                        <input type="radio" class="custom-control-input" id="normalRadio" name="viewMode" value="1"
+                            checked>
+                        <label class="custom-control-label" for="normalRadio">Bình thường</label>
+                    </div>
+                    <div class="custom-control custom-radio">
+                        <input type="radio" class="custom-control-input" id="anotherRadio" name="viewMode" value="2">
+                        <label class="custom-control-label" for="anotherRadio">Nghĩa+Dũng</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-primary" type="submit">Xem kết quả</button>
+                </div>
+            </form>
+        </div>
+        <div class="report-region d-none" id="report-region">
+            <table id="grid-report" class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">User</th>
+                        <th scope="col">Money</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
