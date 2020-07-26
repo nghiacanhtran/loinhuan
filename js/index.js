@@ -61,7 +61,7 @@ var indexModule = (function (config) {
 
     let calculateMoney = function () {
         let currency = $("#region-calculate_frm-money").val();
-        let currencyNotDigit = Number(currency.replace(',', '') || '0');
+        let currencyNotDigit = Number(currency.replace(/\,/g, '') || '0');
         let interestRate = Number($('#region-calculate_frm-interest-rate').val());
         let viewMode = Number($('input[name="viewMode"]:checked').val());
         let moneyOfForexTeam = (currencyNotDigit * interestRate) / 100;//
